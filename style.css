@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+
+:root{
+    --blackie: #323232;
+    --yellow: #FFF48C;
+    --dark-green: #495E57;
+    --dark-yellow: #F4CE14;
+    --light-green: #719287;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/*header*/
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    flex-direction: row;
+    align-items: center;
+    margin: 1.5rem 0;
+    background-color: white;
+
+}
+
+header a{
+    text-decoration: none;
+    color: var(--blackie);
+    font-family: 'Inknut Antiqua';
+}
+
+header a:hover{
+    color: var(--dark-green);
+    text-shadow: -2px 2px 2px #ffe77a50;
+}
+
+ul img:hover{
+    box-shadow: 0 0 10px 0 var(--yellow);
+}
+ul li:last-child img{
+    border: none;
+    border-radius:50%;
+}
+
+header ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+    align-items: center;
+}
+
+header li{
+    list-style-type: none;
+}
+
+header li button{
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color: var(--yellow);
+    color: var(--dark-green);
+    font-family: 'Inknut Antiqua';
+    margin: 0;
+    transition: border-color 0.5s ease;
+}
+
+header li button:hover{
+    border: 2px solid var(--yellow);
+    transition: border-color 0.5s ease, background-color 1s ease;
+    background-color: var(--light-green);
+    color: var(--yellow);
+}
+
+header li button:active{
+    border: 2px solid var(--yellow);
+    transition: border-color 0.1s ease, background-color 1s ease;
+    background-color: #abc5bc;
+    color: var(--yellow);
+}
+
+/*header end*/
+
+/*first*/
+.first{
+    display: flex;
+    justify-content:center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 4rem;
+}
+
+.first .pub{
+    height: 600px;
+    width: 850px;
+    border-radius: 15px;
+}
+
+/*points*/
+
+.points_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    padding: 0 1rem 1rem 1rem;
+    border: none;
+    border-radius: 20px;
+}
+.points_card .text{
+    font-family: 'Inknut Antiqua';
+    color: var(--dark-green);
+    text-shadow: -2px 2px 0px var(--dark-yellow);
+    margin: 0;
+    padding: 0;
+}
+
+.points_card .points{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+
+}
+
+.points_card p{
+    margin: 0;
+}
+
+.points_card .first{
+    font-family: 'montaga';
+    color: var(--blackie);
+}
+.points_card .sec{
+    font-family: 'Inknut Antiqua';
+    color: var(--dark-green);
+}
+
+.points_card .points_menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+.points_menu p{
+    font-family: 'montaga';
+    font-size: 1.5em;
+}
+
+.points_card .menu__points{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    font-family: 'Inknut Antiqua';
+    padding: 1rem 0;
+}
+
+.menu__points .line{
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: auto 1rem;
+    padding: 0rem 1.5rem 0.5rem 1.5rem;
+    border: none;
+    border-radius: 15px;
+}
+
+.line button{
+    padding: 0.15rem 1rem;
+    font-family: 'Inknut Antiqua';
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background-color: var(--light-green);
+    color: white;
+    transition: backround-color 1s ease, border-color 1s ease, color 1s ease;
+}
+
+.line:hover .button button {
+    border: 2px solid var(--light-green);
+    background-color: var(--yellow);
+    color: var(--light-green);
+    transition: background-color 1s ease, border-color 1s ease, color 1s ease;
+}
+
+.menu__points .line:hover{
+    box-shadow: 0 0 15px 3px #43434310;
+}
+
+.line:active .button button {
+    border: 2px solid #8db3a6;
+    background-color: #fff8b7;
+    color: #8db3a6;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+
+.menu__points .line_menu{
+    display: flex;
+    flex-direction: column;
+}
+.line_menu h2{
+    color: var(--dark-green); 
+    font-size: 1.3em;
+}
+.line_menu p{
+    color: #A8B2AE;
+    font-size: 1.2em;
+}
+
+.menu__points .last{
+    text-decoration: underline;
+    color: #F4CE14;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-left: 1.25rem;
+}
+
+.menu__points .last:hover{
+    text-shadow: -2px 1px 2px var(--yellow);
+    color: var(--light-green);
+}
+/*points end*/
+
+
+/*the second part*/
+.sec{
+    display: flex;
+    flex-direction: row;
+    gap: 1.7rem 2.5rem;
+    margin: 1rem 4rem;
+    flex-wrap: wrap;
+}
+
+
+@media (min-width: 700px) and (max-width: 1200px){
+    .sec .sec_left{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .localisation{
+        padding-bottom: 1rem;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  /* Two columns */
+        grid-template-rows: 1fr 1fr;            /* Two rows */
+        row-gap: 3rem;
+        column-gap: 2rem;
+        grid-template-areas:
+            "logo social_media"
+            "contact quick_links";
+    }
+}
+
+@media (max-width: 700px) {
+    .sec .men{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 3.5rem;
+        margin-bottom: 3rem;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+    
+}
+/*the sec part left*/
+.sec_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*localisation*/
+.localisation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--light-green);
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    flex-wrap: wrap;
+    margin-top: 6.5rem;
+
+}
+
+.localisation h1{
+    font-size: 1.25rem;
+    color:var(--yellow);
+    font-family: 'Inknut Antiqua';
+}
+
+.localisation p{
+    font-size: 1rem;
+    color: white;
+    font-family: 'Inknut Antiqua';
+    font-weight: 300;
+}
+.localisation .timing{
+    display: inline-flex;
+    gap: 0.7rem;
+    margin: 1.2rem auto;
+}
+
+.timing .text{
+    color: white;
+    font-family: 'montaga';
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+/*localisaiton end*/
+
+
+/*gallery*/
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 20px;
+    padding: 0 0.5rem 2rem 0.5rem;
+}
+
+.gallery .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    gap: 0.6rem;
+}
+
+.text h2{
+    font-family: 'Inknut Antiqua';
+    font-size: 1.25em;
+    color: var(--dark-green);
+}
+
+.gallery .text h4{
+    font-family: 'montaga';
+    font-size: 1em;
+    color: var(--dark-green);
+    font-weight: 400;
+}
+
+.pictures_part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+.pic1 img {
+    transition: opacity 0.1s ease;
+    opacity: 1;
+    border-radius: 15px;
+    display: block;
+    height: 10rem;
+    width: 18rem;
+}
+
+.pic1 img.fade-out {
+    opacity: 0; /* Fade out class */
+}
+
+.pictures_part .cheks{
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.cheks{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center
+
+}
+
+.cheks input[type="radio"] {
+    display: none; 
+}
+
+.cheks label {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 2px 1px #ffffff40;
+}
+
+.cheks input[type="radio"]:checked + label {
+    background-color: var(--dark-green);
+    height: 8px;
+    width: 20px;
+    border-radius: 10px;
+}
+
+.cheks input[type="radio"]:not(:checked):hover + label{
+    background-color: var(--light-green);
+}
+/*the end of the left side*/
+
+/*the right side or the menu*/
+.sec_right{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+.menu_text h1{
+    font-family: 'Inknut Antiqua';
+    font-size: 2em;
+    color: var(--light-green);
+    text-shadow: -2px 2px 2px var(--yellow);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 0 35px 3px #43434310;
+    padding: 2.5rem 3rem 2rem 3rem;
+    border-radius: 15px;
+    width: 60rem;
+}
+
+.card{
+    display: none;
+    transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.card.active{
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu1, .menu2, .menu3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu1 h1, .menu2 h1, .menu3 h1{
+    font-weight: 600;
+    font-family: 'Inknut Antiqua';
+    font-size: 1.7em;
+    color:var(--dark-yellow);
+}
+
+.title{
+    margin-bottom: 0.5rem;
+}
+.container .men{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,auto);
+    row-gap: 1.5rem;
+    column-gap: 2rem;
+    margin-bottom: 1rem;
+    overflow-y: auto;
+    height: 38rem;
+    width: 50rem;
+}
+
+.picks{
+    margin-bottom: 2rem;
+}
+
+.container .men::-webkit-scrollbar {
+    width: 5px; /* Adjust the width of the scrollbar */
+}
+
+.container .men::-webkit-scrollbar-thumb {
+    background-color: var(--light-green); /* Thumb color */
+    border-radius: 10px; /* Rounded edges for the scrollbar thumb */
+}
+
+.container .men::-webkit-scrollbar-thumb:hover {
+    background-color: var(--dark-green); /* Darker color on hover */
+}
+
+.container .men::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Track color */
+    border-radius: 10px; /* Rounded edges for the scrollbar track */
+}
+
+
+.container .line{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding: 0 0.5rem 1rem 1rem;
+    border-radius: 15px;
+}
+
+.container h2{
+    font-size: 1.25rem;
+    font-family: 'Inknut Antiqua';
+    color: var(--dark-green);
+}
+.container h3{
+    font-size: 1.15rem;
+    font-family: 'Montaga';
+    color: #7d8180;
+    font-weight: 400;
+}
+
+.container h4{
+    font-size: 1rem;
+    font-family: 'Montaga';
+    color: #A8B2AE;
+    font-weight: 400;
+}
+
+
+.container button{
+    color: white;
+    background-color: var(--light-green);
+    font-size: 1em;
+    font-weight: 700;
+    padding: 0.5rem 2rem;
+    font-family: 'Inknut Antiqua';
+    border: solid 2px transparent;
+    border-radius: 25px;
+    transition: border-color 1s ease, backround 1s ease;
+
+}
+.container button:hover{
+    color:var(--dark-green);
+    background-color:var(--yellow);
+    font-size: 1em;
+    font-weight: 700;
+    padding: 0.5rem 2rem;
+    font-family: 'Inknut Antiqua';
+    border: solid 2px var(--light-green);
+    border-radius: 25px;
+    transition: border-color 1s ease, backround 1s ease;
+}
+
+.container button:active{
+    color:var(--light-green);
+    background-color:#ffe77a;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 0.5rem 2rem;
+    font-family: 'Inknut Antiqua';
+    border: solid 2px var(--light-green);
+    border-radius: 25px;
+
+}
+
+
+/*the end of the sec*/
+
+/*footer*/
+footer{
+    display: flex;
+    flex-direction: row;
+    column-gap: 8rem;
+    align-items:center;
+    flex-wrap: wrap;
+    margin: 3rem auto;
+    justify-content: center;
+}
+
+
+footer h3{
+    font-family: 'Inknut Antiqua';
+    color: var(--dark-green);
+    font-size: 1.3em;
+}
+
+footer a{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 1rem;
+    font-family: 'Inknut Antiqua';
+    font-size: 1em;
+    color: #2E2E2E;
+}
+footer a:hover{
+    text-decoration: none;
+    color: var(--dark-green);
+    text-shadow: -2px 2px 1px #ffe77a50;
+}
+
+.quick_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Social_media, .Contact {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
